@@ -1,3 +1,3 @@
 # EVFHQ-Database
 
-EVFHQ-Database provides a straightforward deployment of PostgreSQL within a Docker container tailored for EVGHQ dataset.
+EVFHQ-Database provides a robust PostgreSQL database setup in a Docker container, pre-configured for efficient storage and retrieval of video data used in the EVFHQ project.
