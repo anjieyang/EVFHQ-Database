@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  postgres:
+    build: .
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - evfhq-database 
+
+volumes:
+  postgres-data:
+
+networks:
+  evfhq-database:
+    name: evfhq-database  
