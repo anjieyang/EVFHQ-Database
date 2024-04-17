@@ -10,3 +10,9 @@ CREATE TABLE videos (
     location TEXT DEFAULT NULL,
     server_id INTEGER DEFAULT NULL
 );
+
+CREATE TABLE IF NOT EXISTS fetch_status (
+    query TEXT PRIMARY KEY,
+    last_page_token TEXT,
+    last_fetch TIMESTAMP DEFAULT NOW()
+);
